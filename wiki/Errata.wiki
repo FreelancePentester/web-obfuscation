@@ -1,0 +1,85 @@
+#summary Errata for the book.
+<wiki:toc/>
+=Chapter 1 Introduction=
+==Page 7 - Regular Expressions==
+This was reported as Issue 5.
+
+There was an error somewhere after final edition and printing. And an extra "A" slipped in to a code block:
+{{{
+A^\t+    Matches one or more Tab characters at the start of a string
+}}}
+
+should be
+
+{{{
+^\t+    Matches one or more Tab characters at the start of a string
+}}}
+
+=Chapter 2 HTML=
+==Page 19 - History and overview==
+This was reported as Issue 1.
+
+A closing square bracket was mistakenly deleted during review:
+<code language="html">
+<![CDATA[
+Here you can ...
+]>
+</code>
+
+Should be
+<code language="html">
+<![CDATA[
+Here you can ...
+]]>
+</code>
+
+==Page 51 - Advanced markup obfuscation==
+This was reported as Issue 2.
+
+This is not an error by itself, but some people may have problem reproducing this.
+
+<code language="html">
+<!`[`if IE 8.0]>
+<script>alert(1)</script>  // works on IE8
+<!`[`endif]>
+</code>
+
+This code is supposed to work on Internet Explorer 8 mode. Depending on the doctype of the page, it could load your browser in other mode.
+
+==Page 51 - Advanced markup obfuscation==
+This was reported as Issue 3.
+
+During edition some dashes were missed:
+
+<code language=html>
+<!-`[`if<img src=x onerror=alert(1)//]--> works! 
+<b>000</b>
+<!--`[`endif]->
+</code>
+
+should be
+
+<code language=html>
+<!--`[`if<img src=x onerror=alert(1)//]--> works! 
+<b>000</b>
+<!--`[`endif]-->
+</code>
+
+==Page 52 - Advanced markup obfuscation==
+This was reported as Issue 4.
+
+A closing angle bracket got lost during editing, and a comment dash is missing:
+
+<code language=html>
+<!--`[`if true && ><script>alert(1)</script]->
+000
+<!--`[`endif]->
+</code>
+
+should be
+
+<code language=html>
+<!--`[`if true && ><script>alert(1)</script>]-->
+000
+<!--`[`endif]-->
+</code>
