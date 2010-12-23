@@ -1,4 +1,5 @@
 #summary Multimedia resources for the book.
+#labels Featured
 
 =Cross Site Location Jacking=
 Two authors of this book, [http://twitter.com/thornmaker thornmaker] and [http://twitter.com/sirdarckcat sirdarckcat] gave a talk on "Cross Site Location Jacking" in OWASP `AppSec` Sweeden 2010 that talks about security consequences of HTTP redirects and URL Parsing.
