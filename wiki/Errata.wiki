@@ -1,4 +1,5 @@
 #summary Errata for the book.
+#labels Featured
 <wiki:toc/>
 =Chapter 1 Introduction=
 ==Page 7 - Regular Expressions==
