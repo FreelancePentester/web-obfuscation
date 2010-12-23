@@ -80,7 +80,7 @@ A closing angle bracket got lost during editing.
 should be
 
 <code language=html>
-<!--`[`if true && ><script>alert(1)</script>]-->
+<!--`[`if true && ><script>alert(1)</script>]->
 000
 <!--`[`endif]->
 </code>
